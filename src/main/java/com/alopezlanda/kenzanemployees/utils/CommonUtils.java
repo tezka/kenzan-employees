@@ -27,6 +27,8 @@ public class CommonUtils {
     if( !StringUtils.isEmpty(update.getDateOfEmployment())) 
       src.setDateOfEmployment(LocalDate.parse(update.getDateOfEmployment(), dtf));
     
+    src.setMiddleName(update.getMiddleName());
+    
     return src;
   }
 }
